@@ -85,8 +85,8 @@ loginForm.addEventListener('submit', function(e) {
                 localStorage.removeItem('rememberUser');
             }
             
-            // Sucesso - redirecionar para dashboard
-            window.location.href = 'dashboard.html';
+            // Sucesso - redirecionar para home
+            window.location.href = 'home.html';
         } else {
             showError('Usuário ou senha incorretos.');
             loginBtn.innerHTML = originalText;
