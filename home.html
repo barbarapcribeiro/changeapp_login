@@ -1,1 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Mãos à Obra - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-exchange-alt"></i>
+                <h2>Change Mgmt</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li class="active">
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/requests.html">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Solicitações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/approvals.html">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Aprovações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/calendar.html">
+                        <i class="fas fa-calendar"></i>
+                        <span>Calendário</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/reports.html">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Relatórios</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer">
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Sair</span>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1>Change Mãos à Obra</h1>
+                </div>
+                
+                <div class="header-right">
+                    <div class="user-info">
+                        <span class="user-name" id="userName">Usuário</span>
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Home Content -->
+            <div class="home-content">
+                <!-- Hero Section -->
+                <section class="hero-section">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1>Change Mãos à Obra</h1>
+                            <p>Transforme sua organização com metodologias comprovadas de gestão de mudanças</p>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-label">Metodologias</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">7</span>
+                                    <span class="stat-label">Disciplinas</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Prático</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="hero-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
+                <!-- Navigation Cards Section -->
+                <section class="navigation-section">
+                    <h2>Explore o Universo do Change Management</h2>
+                    <div class="nav-cards-grid">
+                        
+                        <!-- Card 1: Vamos falar de Change -->
+                        <div class="nav-card" data-category="fundamentals">
+                            <div class="card-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Vamos falar de Change</h3>
+                                <p>Fundamentos e conceitos essenciais sobre gestão de mudanças organizacionais</p>
+                                <div class="card-tags">
+                                    <span class="tag">Básico</span>
+                                    <span class="tag">Conceitos</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Metodologias de Change -->
+                        <div class="nav-card" data-category="methodologies">
+                            <div class="card-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Metodologias de Change</h3>
+                                <p>ADKAR, Kotter, Lean Change, Prosci e outras metodologias comprovadas</p>
+                                <div class="card-tags">
+                                    <span class="tag">Frameworks</span>
+                                    <span class="tag">Processos</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: As disciplinas em Change -->
+                        <div class="nav-card" data-category="disciplines">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>As disciplinas em Change</h3>
+                                <p>Principais áreas de conhecimento e competências necessárias</p>
+                                <div class="card-tags">
+                                    <span class="tag">Competências</span>
+                                    <span class="tag">Habilidades</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Gestão de Stakeholders -->
+                        <div class="nav-card" data-category="stakeholders">
+                            <div class="card-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Gestão de Stakeholders</h3>
+                                <p>Identificação, análise e engajamento das partes interessadas</p>
+                                <div class="card-tags">
+                                    <span class="tag">Relacionamento</span>
+                                    <span class="tag">Influência</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: Comunicação -->
+                        <div class="nav-card" data-category="communication">
+                            <div class="card-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Comunicação</h3>
+                                <p>Estratégias e planos de comunicação eficazes para mudanças</p>
+                                <div class="card-tags">
+                                    <span class="tag">Estratégia</span>
+                                    <span class="tag">Mensagens</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: Engajamento -->
+                        <div class="nav-card" data-category="engagement">
+                            <div class="card-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Engajamento</h3>
+                                <p>Técnicas para envolver e motivar pessoas durante a mudança</p>
+                                <div class="card-tags">
+                                    <span class="tag">Motivação</span>
+                                    <span class="tag">Participação</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 7: Gestão de Resistências -->
+                        <div class="nav-card" data-category="resistance">
+                            <div class="card-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Gestão de Resistências</h3>
+                                <p>Identificar, compreender e superar resistências à mudança</p>
+                                <div class="card-tags">
+                                    <span class="tag">Superação</span>
+                                    <span class="tag">Estratégias</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 8: Aprendizagem -->
+                        <div class="nav-card" data-category="learning">
+                            <div class="card-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Aprendizagem</h3>
+                                <p>Desenvolvimento de competências e capacitação contínua</p>
+                                <div class="card-tags">
+                                    <span class="tag">Treinamento</span>
+                                    <span class="tag">Desenvolvimento</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 9: Impactos Organizacionais -->
+                        <div class="nav-card" data-category="impacts">
+                            <div class="card-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Impactos Organizacionais</h3>
+                                <p>Análise e gestão dos impactos da mudança na organização</p>
+                                <div class="card-tags">
+                                    <span class="tag">Análise</span>
+                                    <span class="tag">Impactos</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 10: Adoção e Sustentação -->
+                        <div class="nav-card" data-category="adoption">
+                            <div class="card-icon">
+                                <i class="fas fa-anchor"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Adoção e Sustentação</h3>
+                                <p>Garantir que as mudanças sejam adotadas e mantidas</p>
+                                <div class="card-tags">
+                                    <span class="tag">Sustentação</span>
+                                    <span class="tag">Consolidação</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 11: Cultura -->
+                        <div class="nav-card" data-category="culture">
+                            <div class="card-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Cultura</h3>
+                                <p>Transformação cultural e alinhamento de valores organizacionais</p>
+                                <div class="card-tags">
+                                    <span class="tag">Valores</span>
+                                    <span class="tag">Comportamento</span>
+                                </div>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Quick Access Section -->
+                <section class="quick-access-section">
+                    <h2>Acesso Rápido</h2>
+                    <div class="quick-access-grid">
+                        <div class="quick-card">
+                            <i class="fas fa-play-circle"></i>
+                            <h4>Começar Agora</h4>
+                            <p>Inicie sua jornada no Change Management</p>
+                        </div>
+                        <div class="quick-card">
+                            <i class="fas fa-bookmark"></i>
+                            <h4>Recursos</h4>
+                            <p>Templates, ferramentas e materiais de apoio</p>
+                        </div>
+                        <div class="quick-card">
+                            <i class="fas fa-question-circle"></i>
+                            <h4>Suporte</h4>
+                            <p>Tire suas dúvidas e obtenha ajuda</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
