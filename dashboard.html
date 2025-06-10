@@ -1,1 +1,171 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Management - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-exchange-alt"></i>
+                <h2>Change Mgmt</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+<li>
+    <a href="home.html">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </a>
+</li>            
+              <li class="active">
+                    <a href="dashboard.html">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/requests.html">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Solicitações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/approvals.html">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Aprovações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/calendar.html">
+                        <i class="fas fa-calendar"></i>
+                        <span>Calendário</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/reports.html">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Relatórios</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer">
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Sair</span>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1>Dashboard</h1>
+                </div>
+                
+                <div class="header-right">
+                    <div class="user-info">
+                        <span class="user-name" id="userName">Usuário</span>
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>15</h3>
+                            <p>Mudanças Pendentes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>8</h3>
+                            <p>Aguardando Aprovação</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>23</h3>
+                            <p>Implementadas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>2</h3>
+                            <p>Em Risco</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-widgets">
+                    <div class="widget recent-changes">
+                        <h3>Mudanças Recentes</h3>
+                        <div class="widget-content">
+                            <div class="change-item">
+                                <div class="change-status pending"></div>
+                                <div class="change-info">
+                                    <h4>Atualização do Sistema ERP</h4>
+                                    <p>Implementação: 15/06/2024</p>
+                                </div>
+                            </div>
+                            <div class="change-item">
+                                <div class="change-status approved"></div>
+                                <div class="change-info">
+                                    <h4>Mudança de Firewall</h4>
+                                    <p>Aprovada em: 10/06/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="widget upcoming-changes">
+                        <h3>Próximas Implementações</h3>
+                        <div class="widget-content">
+                            <div class="upcoming-item">
+                                <div class="date">12 JUN</div>
+                                <div class="info">
+                                    <h4>Manutenção de Servidor</h4>
+                                    <p>22:00 - 02:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
